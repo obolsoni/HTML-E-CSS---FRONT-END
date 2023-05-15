@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+#PRINCIPAL{
+    margin: auto;
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 600px;
+    
+}
+
+.imgcuidados{
+    width: 50%;
+    height: 200px;
+
+}
+.imgmenores{
+    width: 90%;
+    height: 450px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(178, 132, 34);
+    text-align: center;
+}
+li{
+    display: inline; /*para retirar as bolinhas das listas*/
+}
+#topo{
+    background-color: #c69750;
+    padding: 10px;
+    text-align: left;
+}
+#rodape{
+    background-color: darkgoldenrod;
+    padding: 10px;
+    text-align: center;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+
+/*area de navegacao*/
+
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #543022;
+
+}
+
+nav ul{ /*formatando meu UL que esta dentro do NAV*/
+    list-style: none; /*retirar a linha abaixo do link*/
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li{ /*deixando os li um do lado do outro*/
+    display: inline-block; /*para ficar um do lado do outro*/
+
+}
+nav ul li a{
+   color: orange; /*cor*/
+   text-decoration: none; /*none dsativa a decoração do link*/
+   padding: 15px; 
+   display: block; /*transformar em blocos e movimentar para onde eu quiser*/
+}
+nav ul li a:hover{ /*evento mouse em cima do link*/
+    color: orange;
+    transition: all .5s; /*efeito de transição*/
+    border-radius: 10px;/*ARREDONDANDO AS BORDAS*/
+    color: #ffffff;/*cor da fonte quando passar o mouse*/
+    font-weight: bolder; /*deixar o texto mais forte (negrito)*/
+}
+    

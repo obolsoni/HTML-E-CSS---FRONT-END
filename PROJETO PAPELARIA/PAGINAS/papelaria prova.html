@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a papelaria mais barata de sao paulo"/>
+    <meta name="keywords" content="material, mochilas, papel, caneta"/>
+    <title> Papelaria A4 </title>
+    <link rel="icon" href="../IMG/android-chrome-192x192.png">
+
+    <style>
+
+        .wrapper{
+        margin: auto;
+        display: flex; /*lihna caixa principal que recebera as demais*/
+        flex-direction: row; /*as caixas estarao em linha - horizontal*/
+        flex-wrap: wrap; /*para ficarem uma do lado da outra e quebrar linha*/
+        /*justify-content: center; /*alinhando os objetos na horizontal*/
+       /* align-items: center; /*alinhando os objetos na vertical*/
+        width: 100%; /*largura da caixa em porcentagem para responsividade*/
+        height: 1000px; /* se ajusta ao conteudo dentro*/
+        background-color: rgb(4, 0, 255);
+        padding:0px;
+        }
+
+        .boxlogo{
+        width: 5%;
+        height: 100px;
+        background-color: rgb(0, 26, 255);
+        margin: 0px;
+        }
+
+        .logo{ 
+        width: 100%;
+        height: 100px;
+        }
+
+        .boxmenu{
+        width: 95%;
+        height: 100px;
+        background-color: rgb(34, 0, 255);
+        }
+
+        nav ul{ 
+        list-style:none; 
+        margin:0;
+        text-align: center;
+        }
+        
+        nav ul li{ 
+            display:inline-block;  
+        }
+        
+        nav ul li a{
+        color:#000000; 
+        text-decoration:none; 
+        padding: 15px;
+        display:block;
+        font-family: 'Century751 No2 BT', Times, serif;
+        font-size: 2vw;   
+        }
+        
+        nav ul li a:hover{   
+        transition: all .5s; 
+        border-radius:10px; 
+        background-color:#ffffff;
+        }
+
+        .boxbanner{
+        width: 100%;
+        height: 500px;
+        background-color: rgb(42, 16, 212);
+        }
+
+        .imgbanner{
+        width:99.09%;
+        height:500px;
+        }
+
+        .boxbanner img{ 
+        position:absolute; 
+        transition-property:opacity; 
+        transition-duration: 1s; 
+        transition-timing-function: linear;
+       }
+       
+        .boxbanner #anime1, .boxbanner:hover #anime2{
+            opacity:1;
+        }
+
+        .boxbanner:hover #anime1, .boxbanner #anime2{
+            opacity:0;
+        }
+         
+        .banner2{
+        width: 99.2%;
+        height: 500px;
+        }
+
+        .box1{
+        width: 22%;
+        height: 300px;
+        margin: 8.5px;
+        }
+
+        .box2{
+        width: 22%;
+        height: 250px;
+        text-align: center;
+        font-family:'Century751 No2 BT', Times, serif;
+        margin: 10px; 
+        
+        }
+
+        .img{
+        width: 100%;
+        height: 300px;
+        }
+
+        .boxRedes{
+        width: 100%;
+        height: 200px;
+        background-color: rgb(38, 0, 255);
+        padding: 0%;
+        }
+
+        .imgredes{
+            width: 100%;
+            height: 200px;
+        }
+
+        .boxFrete{
+        width: 100%;
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        padding: 1%;
+        text-align: center;
+        }
+
+        .imgfrete{
+            width: 100%;
+            height: 400px;
+        }
+
+        .boxrodape{
+        width: 33%;
+        height: 200px;
+        text-align: center;
+        }
+
+        .boxdireitos{
+            width: 100%;
+            height: 350x;
+            background-color: blue;
+            text-align: center;
+            font-family:'Century751 No2 BT', Times, serif;
+            color: #ffffff;
+            border-radius: 15%;
+            padding: 1%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="boxlogo">
+        <img src="../IMG/icone loja.png" alt="" class="logo">
+        </div>
+
+        <div class="boxmenu">
+            <nav>
+                <ul>
+                    <li><a href="Index.html"> Home |</a></li>
+                    <li><a href="Cafeteria.html"> Escolar |</a></li>
+                    <li><a href="Menu.html"> Informática |</a></li>
+                    <li><a href="Contato.html"> Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="boxbanner">
+            <div class="boxbanner">
+                <img src="../BREAFING/Prancheta 1.png" class="imgbanner">
+                <img id="anime2" src="../BREAFING/banner3.png" class="imgbanner"> 
+            </div>
+        </div>
+
+        <div class="boxbanner">
+        <img src="../BREAFING/banner2.png" alt="" class="banner2">
+        </div>
+
+        <!--box das imagens abaixo dos banners-->
+        <div class="box1">
+        <img src="../IMG/cadeira.jpg" alt="" class="img">
+        </div>
+
+        <div class="box1">
+        <img src="../IMG/conjunto mario.webp" alt="" class="img">
+        </div>
+
+        <div class="box1">
+            <img src="../IMG/papel.jpg" alt="" class="img">
+        </div>
+
+        <div class="box1">
+            <img src="../IMG/fone.webp" alt="" class="img">
+        </div>
+
+        <!--texto dos produtos-->
+        <div class="box2">
+        <strong> A Cadeira PZ1006E foi desenvolvida para que os usuários tenham uma experiência extremamente confortável, mesmo que precise utilizar por muitas horas seguidas, seja para jogar, trabalhar, assistir um filme ou série.   
+            <br>
+            <br>
+            Cadeira gamer 
+            <br>
+            R$ 750,00
+        </strong>
+        </div>
+
+        <div class="box2">
+       <strong> O Kit Mochila Escolar com Rodinhas Super Mario com Lancheira e Estojo Vermelha é composto pelos itens: Lancheira Infantil Masculina Mario Vermelha, Estojo Escolar Masculino Mario Vermelho, Mochila Infantil Masculina Mario com Rodinha Vermelha.  
+        <br>
+        <br>
+        Kit mochila Mario Bros 
+        <br>
+        R$ 200,00 
+        </strong>
+        </div>
+
+        <div class="box2">
+        <strong> Superfície resistente, corte perfeito e absorção equilibrada que permite o melhor deslizamento na impressora evitando desperdício de tinta.
+
+        O sulfite Chamequinho é produzido a partir de florestas 100% plantadas e renováveis e suas fibras são tratadas para obter o mais alto grau de brancura.   
+        <br>
+        <br>
+        Papel sulfite 
+        <br>
+        R$ 20,00 
+        </strong>
+        </div>
+        
+        <div class="box2">
+        <strong>Headset Gamer Havit H2002D Aparência e textura proporcionais, simples e generosas. Jaqueta de liga leve com frente e superfície de plástico com revestimento de piano. 
+            Design Gamer em preto, para combinar com seu setup e além de ter qualidade surpreendente por um preço baixo.  
+        <br>
+        <br>
+        headset gamer 
+        <br>
+         R$ 350,00 
+        </strong>
+        </div>
+
+        <!--redes sociais-->  
+        <div class="boxRedes">
+        <img src="../IMG/redes.png" alt=""  class="imgredes">
+        </div>
+
+        <div class="boxFrete">
+        <img src="../IMG/frete.png" alt="">
+        </div>
+
+        <div class="boxrodape">
+            Institucional
+
+        Sobre a papelaria A4 <br>
+        Lojas<br>
+        Trabalhe Conosco<br>
+        Vendas para Empresas<br>
+        Fale Conosco<br>
+        Mapa do Site<br>
+        Serviços <br>
+        Copy&Print<br>
+        Assessoria de Imprensa<br>
+        </div>
+        
+        <div class="boxrodape">
+            Dúvidas
+
+            Como funciona a loja <br>
+            Dúvidas sobre cadastro <br>
+            Preços e pagamento na loja virtual <br>
+            Acompanhamento, alteração e entrega dos pedidos <br>
+            Devolução e troca <br>
+            Segurança <br>
+            Nota Fiscal Eletrônica <br>
+            Produtos por Download <br>
+            Política de Privacidade <br>
+
+        </div>
+        <div class="boxrodape">
+            Formas de Pagamento<br>
+
+            <br>Cartões de crédito:<br> Visa, MasterCard, Diners Club, Hiper, American Express e Elo
+
+            Boleto Bancário, PIX e Pagamento Faturado <br>
+
+            <br>Débito Online: Itaú, Banco do Brasil e Visa Electron <br>
+        </div>
+    
+        <div class="boxdireitos">
+           <strong> Todos os direitos reeservados - 2023 </strong>
+        </div>
+
+    </div>
+    
+</body>
+</html>
